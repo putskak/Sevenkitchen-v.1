@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/background.jpg"/>
+    <title>SevenKitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        body{
+            padding: 0;
+            margin: 0;
+            height: 260vh;
+            font-weight: 400;
+            font-style: normal;
+            background-color: rgb(14, 13, 13);
+        }
+        .header-menu{
+            display:block;
+            width: 100%;
+            height: 6em;
+
+        }
+        .logo {
+            display: inline-block;
+            margin: 1.1em 0 0 3em;
+            font-family: "EB Garamond", serif;
+        }
+        #txt {
+            color: #b03305;
+            opacity: 1;
+
+        }
+        .menuwrapper{
+        display: flex;
+        float: right;
+        margin: 3em 4em 0 0 ;
+            
+        }
+        .circle #txt {
+            display: block;
+            justify-content: center;
+            text-align: center;
+            padding: 3px;
+            font-family: "EB Garamond", serif;
+            font-weight: 900;
+        }
+        .circle {
+            background-color: rgba(rgb(86, 63, 63), green, blue, alpha);
+            height: 3em;
+            width: 15em;
+            border-radius: 60px;
+            
+
+        }
+        .nav-bar >a {
+            padding: 0 40px 0 40px;
+            font-size: 1.1em;
+            text-decoration: none;
+            color: rgb(138, 133, 133);
+            font-size: 1em;
+            font-family: "poppins";
+            font-weight: 500;
+        }
+        .nav-bar > a:hover {
+            border:2px solid rgba(128, 128, 128, 0.658);
+            border-radius: 5px;
+        }
+        .gridcon{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 30vh;
+        }
+        
+        .write {
+            display: block;
+            padding: 0;
+            margin: 5em 0 0 0;
+            float: left;
+            width: 50%;
+        }
+        #tulis{
+            color: #b03305;
+            font-family:"poppins";
+            font-weight: 400;
+            letter-spacing: 2px;
+            font-size: 0.8em;
+            padding: 0;
+            margin: 2.5em 0 1em 6em;
+            
+            
+        }
+        #tulis2{
+            float: left;
+            display: block;
+            color: whitesmoke;
+            padding: 0;
+            font-weight: 900;
+            font-size: 2.9em;
+            margin: 0 0 0 1.7em;
+
+        }
+        #tulis3{
+            line-height: 25px;
+            display: block;
+            float: left;
+            color: whitesmoke;
+            padding: 0;
+            margin: 1em;
+            text-align: left;
+            margin: 1em 0 0 5em;
+            font-family: "poppins";
+            font-weight: 400;
+            
+        }
+        .food{
+            display: flex;
+            height: 31em;
+            width: 31em;
+            padding: 0;
+            margin: 0 0 2em 3em;
+            align-items: center;
+            border-radius: 50%;
+        }
+        .food > img{
+            height: 100%;
+            width:100%;
+            
+        }
+        .food:hover {
+            box-shadow: 5px 5px 5px 5px rgba(202, 183, 183, 0.477);
+        }
+        .loader {
+            background-color: rgb(128, 128, 128, 0.5);
+            position: fixed;
+            border-radius: 50%;
+            border: 20px solid grey;
+            border-top: 20px solid  #b03305;
+            border-bottom: 20px solid #b03305;
+            width: 2em;
+            height: 2em;
+            animation: spin 0.5s linear infinite;
+            z-index: 5;
+            justify-content: center;
+            align-items: center;
+            margin: 18em 0 0 46%;
+
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 220vh;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .profile-card{
+            display: flex;
+            flex-direction: column;
+            height: 200vh;
+            width: 50%;
+            justify-content: center;
+            background-color: white;
+            border-radius: 5px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .listFood1 {
+            background-color: white;
+            height: 16em;
+            width: 45em;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            margin: 6em auto;
+            text-align: center;
+        }
+        .listFood3 {
+            background-color: white;
+            height: 16em;
+            width: 45em;
+            z-index: 100;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            margin: 6em auto;
+            text-align: center;
+        }
+        .listFood4 {
+            background-color: white;
+            height: 16em;
+            width: 45em;
+            z-index: 100;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            margin: 6em auto;
+            text-align: center;
+        }
+        #titleForListFood1{
+            justify-content: center;
+            text-align: center;
+            z-index: 60;
+            margin: 0 0 0 10em;
+
+        }
+        #textForListFood1{
+            margin: 1em 1em 0 0;
+        }
+        #imglistFood1{
+            height: 13em;
+            width: 13em;
+            float: left;
+            margin: 0 ;
+            border-radius: 50%;
+            z-index: 200;
+        }
+        #priceForFood {
+            font-weight: 900;
+            color: #b03305;
+        }
+        #priceForFood2 {
+            font-weight: 900;
+            color: #b03305;
+        }
+        #priceForFood3 {
+            font-weight: 900;
+            color: #b03305;
+        }
+        #priceForFood4 {
+            font-weight: 900;
+            color: #b03305;
+        }
+        #buttonFirstFood{
+            background-color: #b03305;
+            color: wheat;
+            padding: 10px 3em;
+            border-radius: 40px;
+        }
+        #img-profile {
+            display: flex;
+            width: 100%;
+            height: 39%;
+            background-color: rgba(176, 51, 5, 0.3);
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        #img-photo {
+            display: flex;
+            border-radius: 50%;
+            width: 40%;
+            height: auto;
+            z-index: 45;
+            margin: 1em 0;
+        }
+        #p-text{
+            justify-content: center;
+            text-align: center;
+        }
+        .buttonHover {
+            box-shadow: 0 10px 10px 0 antiquewhite;
+            opacity: 0.6;
+        }
+        @keyframes spin {
+            0%{transform: rotate(0deg );}
+            100%{transform: rotate(360deg);}
+            
+        }
+        #id-image{
+            display: none;
+        }
+        .listFood2 {
+            background-color: white;
+            display: block;
+            height: 16em;
+            width: 45em;
+            z-index: 100;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            margin: 6em auto;
+            text-align: center;
+        }
+           /* Medium devices (landscape tablets, 768px and up) */
+           @media only screen and (max-width: 600px) {
+
+            body{
+                width: 100%;
+                height: 300vh;
+            }
+            .menuwrapper{
+            margin: 0 0 0 0;
+            display: block;
+            position: fixed;
+            bottom: 15px ; 
+            height: 3em;
+            width: 100%;
+            z-index: 100;
+        }
+        .menuwrapper > .nav-bar {
+            align-items: center;
+        }
+        #id-image {
+            border: 2px black solid;
+            border-radius: 50%;
+            width: 1.3em;
+            height: 1.3em;
+            display: flex;
+            background-color: white;
+            margin: 0 0 0 10px;
+        }.nav-bar{
+            display: flex;
+            background-color: white;
+            border-radius: 1em;
+            align-items: center;
+            justify-content: center;
+            height: 4em;
+            width: 100%;
+            margin: 0 0 0 0;
+        }
+        .nav-bar > a{
+            display: block;
+            padding: 0 2px 0 0;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: black;
+            font-family: "poppins";
+            font-weight: 700;
+            font-size: 13px;
+            margin: 3px 0 0 0;
+            width: 100%;
+        }
+        .nav-bar > a:hover {
+            border:2px solid rgba(128, 128, 128, 0.658);
+            border-radius: 5px;
+        }
+       
+        .menu {
+            opacity: 0.8;
+           }
+           .loader {
+            background-color: rgb(128, 128, 128, 0.5);
+            position: fixed;
+            border-radius: 50%;
+            border: 20px solid grey;
+            border-top: 20px solid  #b03305;
+            border-bottom: 20px solid #b03305;
+            width: 2em;
+            height: 2em;
+            animation: spin 0.5s linear infinite;
+            z-index: 4;
+            justify-content: center;
+            align-items: center;
+            margin: 20em 0 0 10em;
+
+        }
+        .background-color{
+            background-color: black;
+        }
+        .container{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 200vh;
+
+        }
+        .listFood1{
+            display: block;
+            width: 70%;
+            height: 31em;
+            text-align: center;
+            justify-content: center;
+            margin: 2em auto;
+            align-items: center;
+        }
+        .listFood2{
+            display: block;
+            width: 70%;
+            height: 31em;
+            text-align: center;
+            justify-content: center;
+            margin: 2em auto;
+            align-items: center;
+        }
+        .listFood3{
+            display: block;
+            width: 70%;
+            height: 31em;
+            text-align: center;
+            justify-content: center;
+            margin: 2em auto;
+            align-items: center;
+        }
+        .listFood4{
+            display: block;
+            width: 70%;
+            height: 31em;
+            text-align: center;
+            justify-content: center;
+            margin: 2em auto;
+            align-items: center;
+        }
+        #imglistFood1{
+            display: block;
+            width: 100%;
+            height: 12em;
+            margin: 1em 0 0 0;
+        }
+        #titleForListFood1{
+            justify-content: center;
+            text-align: center;
+            z-index: 60;
+            margin: auto;
+
+        }
+        #textForListFood1{
+            font-size: 0.8em;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .listFood2{
+
+            display: block;
+            width: 70%;
+            height: 31em;
+            text-align: center;
+            justify-content: center;
+            margin: 2em auto;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-family: "EB Garamond", serif;
+            padding: 0;
+            margin: 1em 0 0 0;
+        }
+        .circle{
+            width: 100%;  
+            padding: 0;
+            margin: 0;    
+        }
+        #txt{
+            padding: 0;
+            margin: 0;
+        }
+        .hide{
+            padding: 0;
+            margin: 0;
+        }
+        .profile-card {
+            height: 300vh;
+            width: 80%;
+            margin: 5em 0 0 0;
+        }
+    }
+
+        
+
+      
+
+
+    </style>
+</head>
+<body >
+
+   <div class="loader"></div>
+   <div class="hide">
+    <div class="header-menu">
+        <div class="hide">
+        <div class="logo">
+            <div class="circle">
+            <h1 id="txt">Seven Kitchen </h1> 
+            </div>
+        </div>
+        <div class="menuwrapper">
+                <nav class="nav-bar">
+                 <img id="id-image" src="assets/menubar-home.png">
+                 <a href="index.html"> Home </a></img>
+                 <img id="id-image" src="assets/menubar-foodmeni.png">
+                 <a href="Contact.html"> Contact</a></img>
+                 <img id="id-image" src="assets/menubar-location.jpg">
+                 <a href="Location.html"> location </a></img>
+                 <img id="id-image" src="assets/menubar-profile.jpg">
+                 <a href="#"> Profile </a></img>
+                </nav>
+              </div> 
+        
+        <div class="container">
+            <div class="profile-card">
+                <img id="img-profile" src="assets/rawon.jpg"/>
+                <img id="img-photo" src="assets/background.jpg"/>
+                <h2>SevenKitchen</h2>
+                <p id="p-text">Lorem ipsum odor amet, consectetuer adipiscing elit. Vivamus magna odio himenaeos ipsum dictum ultricies. Lacus malesuada etiam blandit blandit, quam aptent. Dapibus volutpat nisi porttitor at fames efficitur torquent. Mus purus porttitor iaculis nascetur lacinia in netus. In nascetur viverra vitae porta donec velit. Sed sem sodales feugiat pharetra ornare. Blandit cras nibh porttitor maecenas arcu parturient. Lacus etiam turpis consectetur sem vulputate fusce ex pellentesque nam.
+                    Habitasse facilisis ut magnis; nec parturient morbi. Acras phasellus finibus vitae ex, rutrum ante. Auctor tristique integer fringilla ultricies praesent primis condimentum sagittis. Cursus dis mauris auctor purus vestibulum condimentum natoque pharetra. Vehicula mattis imperdiet duis netus sagittis cubilia nec. Nibh fames eu etiam primis nunc torquent cursus purus? Habitasse augue tristique metus finibus conubia consequat porttitor vel. Quisque malesuada velit mus ultrices taciti quisque magnis sapien.
+                    Ornare vestibulum placerat volutpat amet fermentum feugiat consequat
+                     faucibus eget. Viverra dictumst vivamus; sit gravida nunc parturient sodales viverra. Tincidunt bibendum mattis metus massa risus eros venenatis feugiat! Cursus eu dolor ullamcorper class in urna habitasse. Semper feugiat mauris semper vel conubia integer. Luctus per lacinia torquent quisque pharetra duis suspendisse parturient. Mollis magna litora platea elementum sit eleifend. Dignissim massa ullamcorper mollis nam amet primis interdum gravida. Orci hendrerit risus mi elit nulla vivamus facilisis faucibus.</p>
+
+            </div>
+        </div>
+   
+</div>
+</div>
+<script src="./script/script.js"></script>
+</body>
+</html>
